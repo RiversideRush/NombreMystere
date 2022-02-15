@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Le Nombre Mystère</title>
+    <link href="NombreMystere.css" rel="stylesheet" type="text/css" />
+    <script src="http://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <h1>WELCOME TO "LE NOMBRE MYSTERE"</h1>
+    <div class="reglesJeu">
+        <p id="regle1">Deviner en un minimum de tentatives et de temps un numéro entre 1 et 10 compris ayant été choisit au hasard par l'ordinateur.</p>
+        <p id="regle2">Si votre score est assez bon, vous serez admis au sein du "HALL OF FAME" (un classement des 10 meilleurs scores).</p> 
+    </div>
+    
+    <div id="boutons">
+        <button id="gow" onclick="go()">START</button>
+        <button id="rank" onclick="ranking()">RANKING</button>
+    </div>
+    
+    <div id="resultat"></div>
+
+    <div id="champNumero" style="display: none">
+        <input id="inputNumero" placeholder="Entrez un numéro" type="text" value=""/>
+        <span id="timer"></span>
+    </div>
+    
+    <div id="HOFouRate"></div>
+
+    <div id="champPseudo"" style="display: none;">
+        <input id="inputPseudo" placeholder= "Entrez un pseudo" type="text" value="">    
+    </div>
+    
+    <div id="TableHOF" style="display: none;">
+        <table>
+            <caption>HALL OF FAME</caption>
+            <tr>
+                <th scope="col">Rang</th>
+                <th scope="col">Pseudo</th>
+                <th scope="col">Score</th>
+                <th scope="col">Temps</th>
+            </tr>
+            <tr>
+                <th scope="row">1</th>
+                <td id="pseudo0"></td>
+                <td id="nombre0"></td>
+                <td id="time0"></td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td id="pseudo1"></td>
+                <td id="nombre1"></td>
+                <td id="time1"></td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td id="pseudo2"></td>
+                <td id="nombre2"></td>
+                <td id="time2"></td>
+            </tr>
+            <tr>
+                <th scope="row">4</th>
+                <td id="pseudo3"></td>
+                <td id="nombre3"></td>
+                <td id="time3"></td>
+            </tr>
+            <tr>
+                <th scope="row">5</th>
+                <td id="pseudo4"></td>
+                <td id="nombre4"></td>
+                <td id="time4"></td>
+            </tr>
+            <tr>
+                <th scope="row">6</th>
+                <td id="pseudo5"></td>
+                <td id="nombre5"></td>
+                <td id="time5"></td>
+            </tr>
+            <tr>
+                <th scope="row">7</th>
+                <td id="pseudo6"></td>
+                <td id="nombre6"></td>
+                <td id="time6"></td>
+            </tr>
+            <tr>
+                <th scope="row">8</th>
+                <td id="pseudo7"></td>
+                <td id="nombre7"></td>
+                <td id="time7"></td>
+            </tr>
+            <tr>
+                <th scope="row">9</th>
+                <td id="pseudo8"></td>
+                <td id="nombre8"></td>
+                <td id="time8"></td>
+            </tr>
+            <tr>
+                <th scope="row">10</th>
+                <td id="pseudo9"></td>
+                <td id="nombre9"></td>
+                <td id="time9"></td>
+            </tr>
+        </table>
+    </div>
+    
+    <script src="NombreMystere.js"></script>
+  </body>
+</html>
